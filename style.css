@@ -19,14 +19,29 @@ body {
 
 .container-two {
   display: flex;
-  justify-self: center;
-  align-self: center;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
   background-color: #dde1e6;
   height: 130px;
   width: 404px;
   margin-bottom: 20px;
   border: 1.5px solid;
   border-radius: 10px;
+}
+
+.results {
+  font-size: 36px;
+  font-weight: bold;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.numbers {
+  font-size: 36px;
+  font-weight: bold;
+  margin-right: 30px;
+  margin-bottom: 10px;
 }
 
 .clear-delete {
@@ -71,7 +86,8 @@ body {
   gap: 5px;
 }
 
-.btn {
+.btn,
+.btn-op {
   height: 70px;
   width: 95px;
   border: 1.8px solid;
