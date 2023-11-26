@@ -1,7 +1,13 @@
+@font-face {
+  font-family: "Digital";
+  src: url("/font/Digital7-rg1mL.ttf") format("truetype");
+}
+
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Digital, sans-serif;
 }
 
 .container-one {
@@ -30,15 +36,15 @@ body {
   border-radius: 10px;
 }
 
-.results {
-  font-size: 36px;
+.display {
+  font-size: 40px;
   font-weight: bold;
   margin-right: 30px;
   margin-bottom: 10px;
 }
 
-.numbers {
-  font-size: 36px;
+.upper-display {
+  font-size: 42px;
   font-weight: bold;
   margin-right: 30px;
   margin-bottom: 10px;
@@ -57,20 +63,22 @@ body {
 }
 
 .clear {
+  font-family: "Digital";
   height: 70px;
   width: 200px;
   background-color: #ffa7ad;
   border: 1.8px solid;
   border-radius: 7px;
-  font-size: 20px;
+  font-size: 30px;
 }
 .delete {
+  font-family: "Digital";
   height: 70px;
   width: 200px;
   background-color: #938ae2;
   border: 1.8px solid;
   border-radius: 7px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .buttons {
@@ -88,9 +96,10 @@ body {
 
 .btn,
 .btn-op {
+  font-family: "Digital";
   height: 70px;
   width: 95px;
   border: 1.8px solid;
   border-radius: 7px;
-  font-size: 20px;
+  font-size: 30px;
 }
