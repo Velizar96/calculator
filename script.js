@@ -16,6 +16,26 @@ const deleteButton = document.querySelector(".delete");
 const display = document.querySelector(".display");
 const upperDisplay = document.querySelector(".upper-display");
 
+////addEventListeners////
+
+window.addEventListener("keydown", handleKeyboardInput);
+
+equalButton.addEventListener("click", evaluate);
+
+clearButton.addEventListener("click", clearDisplay);
+
+deleteButton.addEventListener("click", deleteNumber);
+
+dotButton.addEventListener("click", appendPoint);
+
+numbers.forEach((number) =>
+  number.addEventListener("click", () => appendNumber(number.textContent))
+);
+
+operators.forEach((operator) =>
+  operator.addEventListener("click", () => setOperation(operator.textContent))
+);
+
 ////FUNCTIONS////
 
 function roundValue(number) {
@@ -34,7 +54,7 @@ function multiply(a, b) {
 function divide(a, b) {
   return a / b;
 }
-
+//
 function operate(operator, a, b) {
   a = Number(a);
   b = Number(b);
