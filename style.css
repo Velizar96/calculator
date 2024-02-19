@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Digital";
+  src: url("/font/Digital7-rg1mL.ttf") format("truetype");
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Digital", sans-serif;
+}
