@@ -84,3 +84,11 @@ function appendPoint() {
   if (display.textContent === "") display.textContent = "0";
   display.textContent += ".";
 }
+
+function setOperation(operator) {
+  if (currentOperation !== null) evaluate();
+  firstNumber = display.textContent;
+  currentOperation = operator;
+  upperDisplay.textContent = `${firstNumber} ${currentOperation}`;
+  shouldResetDisplay = true;
+}
