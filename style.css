@@ -1,13 +1,10 @@
-@font-face {
-  font-family: "Digital";
-  src: url("/font/Digital7-rg1mL.ttf") format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap");
 
 body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Digital", sans-serif;
+  font-family: "Kode Mono", sans-serif;
 }
 
 .container-one {
@@ -63,7 +60,7 @@ body {
 }
 
 .clear {
-  font-family: "Digital";
+  font-family: "Kode Mono";
   height: 70px;
   width: 200px;
   background-color: #ffa7ad;
@@ -72,7 +69,7 @@ body {
   font-size: 30px;
 }
 .delete {
-  font-family: "Digital";
+  font-family: "Kode Mono";
   height: 70px;
   width: 200px;
   background-color: #938ae2;
@@ -95,7 +92,7 @@ body {
 
 .btn,
 .btn-op {
-  font-family: "Digital";
+  font-family: "Kode Mono";
   height: 70px;
   width: 95px;
   border: 1.8px solid;
