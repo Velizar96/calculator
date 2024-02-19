@@ -106,3 +106,13 @@ function evaluate() {
   upperDisplay.textContent = `${firstNumber} ${currentOperation} ${secondNumber} =`;
   currentOperation = null;
 }
+
+function handleKeyboardInput(e) {
+  if (e.key >= 0 && e.key <= 9) appendNumber(e.key);
+  if (e.key === "Escape") clearDisplay();
+  if (e.key === "Backspace") deleteNumber();
+  if (e.key === "=" || e.key === "Enter") evaluate();
+  if (e.key === ".") appendPoint();
+  if (e.key === "+" || e.key === "-" || e.key === "*" || e.key === "/")
+    setOperation(convertOperator(e.key));
+}
