@@ -56,3 +56,17 @@ function convertOperator(operator) {
   if (operator === "*") return "×";
   if (operator === "/") return "÷";
 }
+
+function resetScreen() {
+  display.textContent = "";
+  shouldResetDisplay = false;
+}
+
+function appendNumber(number) {
+  if (display.textContent === "0" || shouldResetDisplay) resetScreen();
+  display.textContent += number;
+}
+
+function deleteNumber() {
+  display.textContent = display.textContent.toString().slice(0, -1);
+}
