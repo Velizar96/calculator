@@ -92,3 +92,17 @@ function setOperation(operator) {
   upperDisplay.textContent = `${firstNumber} ${currentOperation}`;
   shouldResetDisplay = true;
 }
+
+function evaluate() {
+  if (currentOperation === null || shouldResetDisplay) return;
+  if (currentOperation === "÷" && display.textContent === "0") {
+    alert("You can't divide by 0!");
+    return;
+  }
+  secondNumber = display.textContent;
+  display.textContent = roundValue(
+    operate(currentOperation, firstNumber, secondNumber)
+  );
+  upperDisplay.textContent = `${firstNumber} ${currentOperation} ${secondNumber} =`;
+  currentOperation = null;
+}
