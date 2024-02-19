@@ -9,3 +9,96 @@ body {
   margin: 0;
   font-family: "Digital", sans-serif;
 }
+
+.container-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #7b8085;
+  height: 600px;
+  width: 410px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 20px;
+}
+
+.container-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  background-color: #dde1e6;
+  height: 130px;
+  width: 404px;
+  margin-bottom: 20px;
+  border: 1.5px solid;
+  border-radius: 10px;
+}
+
+.display {
+  font-size: 40px;
+  font-weight: bold;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.upper-display {
+  font-size: 42px;
+  font-weight: bold;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.clear-delete {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 10px;
+  background-color: #7b8085;
+  height: 70px;
+  width: 404px;
+  text-align: center;
+  gap: 10px;
+}
+
+.clear {
+  font-family: "Digital";
+  height: 70px;
+  width: 200px;
+  background-color: #ffa7ad;
+  border: 1.8px solid;
+  border-radius: 7px;
+  font-size: 30px;
+}
+.delete {
+  font-family: "Digital";
+  height: 70px;
+  width: 200px;
+  background-color: #938ae2;
+  border: 1.8px solid;
+  border-radius: 7px;
+  font-size: 30px;
+}
+
+.buttons {
+  width: 410px;
+  height: 350px;
+  margin: 0 auto;
+  background-color: #7b8085;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 5px;
+}
+
+.btn,
+.btn-op {
+  font-family: "Digital";
+  height: 70px;
+  width: 95px;
+  border: 1.8px solid;
+  border-radius: 7px;
+  font-size: 30px;
+}
