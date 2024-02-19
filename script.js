@@ -70,3 +70,17 @@ function appendNumber(number) {
 function deleteNumber() {
   display.textContent = display.textContent.toString().slice(0, -1);
 }
+
+function clearDisplay() {
+  display.textContent = 0;
+  upperDisplay.textContent = "";
+  firstNumber = "";
+  secondNumber = "";
+  currentOperation = null;
+}
+
+function appendPoint() {
+  if (shouldResetDisplay) resetScreen();
+  if (display.textContent === "") display.textContent = "0";
+  display.textContent += ".";
+}
